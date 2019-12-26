@@ -1,0 +1,95 @@
+#home{
+    .clip-svg {
+        clip-path: url(#myClip);
+      }
+    .svgHomeLeft{
+        margin: 5px 0 0 5px;
+        fill: $homeBgLeft;
+    }
+    .svgHomeRight{
+        position:absolute;
+        right: 0;
+        fill:$homeBgRight;
+    }
+    .contentContaner{
+        position: absolute;;
+        width: 100%;      
+        height: 100%;
+        .leftContainer{
+            position: absolute;
+            height: 100%;
+            left: 0;
+            right: 40%;
+
+            .content{
+                position: absolute;
+                left: 37%;
+                top: 45%;
+                transform: translate(-35%, -50%);
+                width: 70%;
+                .maskBox{
+                    position: relative;
+                    overflow: hidden;
+                    h1{
+                        font-family: 'Roboto Slab',sans-serif;
+                        font-size: 3.5rem;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        color: $mainColor;
+                    }
+                }
+                
+                h2{
+                    font-size: 2rem;
+                    margin-top: 15px;
+                    line-height: 35px;
+                    color: $mainColor;
+                    font-weight: 100;
+                }
+            }
+        }
+        .rightContainer{
+            position: absolute;
+            height: 100%;
+            left: 60%;
+            right: 0;
+            .rightBox{
+                position:absolute;
+                height: 70%;
+                width: 100%;
+                top:70%;
+                left: 50%;
+                transform: translate(-50%,-70%);
+                img{
+                    position: absolute;                  
+                    z-index: 5;
+                    height: 100%;
+                }
+              
+            }
+            #svgPathBlueRight{
+                fill:$mainColor;
+            }
+            .dots
+            {
+                position: absolute;
+                left: -50px;
+                top:-40px;
+                fill:rgba($mainColor,0.6);
+                width: 100%;
+                height: 100%;
+                #trackTop1
+                {
+                    fill:red;
+                }
+            }
+        }
+    }
+    // .dots{
+    //     position: absolute;
+    //     left: 0;
+    //     fill:rgba($mainColor,0.6)
+      
+    // }
+    
+}

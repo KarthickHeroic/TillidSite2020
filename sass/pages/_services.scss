@@ -1,0 +1,101 @@
+#services{
+    overflow: hidden;
+    .serviceWrapper
+    {
+        height: 100%;
+        width:100%;
+        position: absolute;
+        .serviceHeader{
+            font-family: 'Roboto Slab','sans-sarif';
+            font-size: 3rem;
+            color: $mainColor;
+            position: relative;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            width: 80%;
+            font-weight: 600;
+            justify-content: center;
+        }
+        .boxContainer
+        {
+            position: relative;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            width: 80%;
+            justify-content: center;    
+                               
+            .boxService{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0;
+                padding: 18px;
+                margin: 10px;
+                background-color: $white;
+                border-radius: 10px;
+                @include box-shadow(0px, 0px, 15px, 2px, rgba($black,0.1));
+                background-repeat: no-repeat;
+                background-size: cover;
+                &.cloud
+                {
+                    background-image: url(../images/service/cloud.jpg);              
+                }
+                &.analytics
+                {
+                    background-image: url(../images/service/analytics.jpg);              
+                }
+                &.consulting
+                {
+                    background-image: url(../images/service/consulting.jpg);              
+                }
+                &.custom
+                {
+                    background-image: url(../images/service/custom.jpg);              
+                }
+                &.uiux
+                {
+                    background-image: url(../images/service/uiux.jpg);              
+                }
+                &.product
+                {
+                    background-image: url(../images/service/product.jpg);              
+                }
+                &.automation
+                {
+                    background-image: url(../images/service/automation.jpg);              
+                }
+                &.mobile
+                {
+                    background-image: url(../images/service/mobileapp.jpg);              
+                }
+                .overlay
+                {
+                    background-color: rgba(255, 255, 255, 0.9);
+                 
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    border-radius: 10px;
+                    z-index: -1;
+                    
+                }
+                h1{
+                    font-family: 'Roboto Slab','sans-sarif';
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                    color:$mainColor;
+                }
+                p{
+                    font-size: 1rem;
+                    color: $textColor2;
+
+                }
+            }
+        }
+    }
+}
